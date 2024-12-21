@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Explore Saudi Arabia</title>
+    <style>
+        body {
+            background: #15193c;
+            color: #ffffff;
+        }
+
+        .header-image {
+            width: 100%;
+            height: 70vh; /* ليأخذ نصف المساحة الرأسية */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* لإخفاء الأجزاء الزائدة */
+            position: relative; /* للسماح بتطبيق الطبقة العلوية */
+        }
+
+        .header-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* لضبط الصورة داخل الإطار بشكل متناسق */
+            position: absolute; /* تثبيت الصورة كخلفية */
+            top: 0;
+            left: 0;
+            z-index: -1; /* لضمان بقاء الصورة خلف الطبقة العلوية */
+        }
+
+        .card-custom-size {
+            max-width: 700px; /* تخصيص حجم الكرت */
+        }
+
+        .card {
+            background: #ffffff;
+            color: #000000;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .footer {
+            background: #232a34;
+            color: #ffffff;
+            padding: 20px 0;
+        }
+
+        .footer_menu ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
+
+        .footer_menu ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .footer_menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar1">
+        <div class="container-fluid navbar1">
+            <img src="world.png" width="80" height="80" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar1" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item navbar1">
+                        <a class="nav-link active navbar1" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item navbar1">
+                        <a class="nav-link" href="#">Teams</a>
+                    </li>
+                    <li class="nav-item navbar1">
+                        <a class="nav-link" href="#">Matches</a>
+                    </li>
+                  
+                    <li class="nav-item navbar1">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                   
+                    <li class="nav-item dropdown navbar1">
+                        <a class="nav-link dropdown-toggle navbar1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu navbar1">
+                            <li><a class="dropdown-item" href="#">About</a></li>
+                            <li><a class="dropdown-item" href="#">Contact</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Tickets</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item navbar1">
+                        <a class="nav-link disabled navbar1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="header-image">
+        <img src="https://c.regencyholidays.com/blog/2024/2/201217_Historic%20Diriyah%20Fort%20-%20Hero%20Image.webp" alt="Header Image">
+    </div>
+
+    <div class="container mt-5">
+        <h3 class="mb-4 cc">Explore Saudi Arabia</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-8"> 
+                <div class="card shadow card-custom-size">
+                    <div class="card-body"> 
+                        <div class="row">
+                            <div class="col-12 col-md-4 d-flex justify-content-start"> 
+                                <img src="https://assets-diriyahco.diriyah.me/a6e382ca30f442e9b32dd729caf78de9?width=1920&quality=80&transform=true&format=webp" class="img-fluid rounded" alt="Diriyah"> 
+                            </div> 
+                            <div class="col-12 col-md-8">
+                                <h4 class="text-start">Diriyah</h4>
+                                <p class="text-start">Diriyah is a historical city that offers a glimpse into Saudi Arabia's rich cultural heritage. It features the At-Turaif District, a UNESCO World Heritage Site.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8 mt-4"> 
+                <div class="card shadow card-custom-size">
+                    <div class="card-body"> 
+                        <div class="row">
+                            <div class="col-12 col-md-4 d-flex justify-content-start"> 
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWxiy44PPaHn7TVOph2OxwUCgyjLF7QkfWVw&s" class="img-fluid rounded" alt="Al-Ula"> 
+                            </div> 
+                            <div class="col-12 col-md-8">
+                                <h4 class="text-start">Al-Ula</h4>
+                                <p class="text-start">Al-Ula is a region known for its stunning natural landscapes, ancient rock formations, and archaeological wonders like the UNESCO World Heritage Site of Hegra.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8 mt-4"> 
+                <div class="card shadow card-custom-size">
+                    <div class="card-body"> 
+                        <div class="row">
+                            <div class="col-12 col-md-4 d-flex justify-content-start"> 
+                                <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTOdAMAz41MHIAagdEOGkhkU0ULkc4e79thex2fyUChOUCRcDxBDSXKzczycEiPv6oiX6GNtv0JVe0tZtJSti0lkiIhT7_RmaN1R2_c5A" class="img-fluid rounded" alt="Riyadh"> 
+                            </div> 
+                            <div class="col-12 col-md-8">
+                                <h4 class="text-start">Riyadh</h4>
+                                <p class="text-start">Riyadh, the capital city, offers a blend of modernity and tradition. Visitors can explore the historic Masmak Fortress, King Abdulaziz Historical Center, and the futuristic King Abdullah Financial District.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer mt-5">
+        <div class="container">     
+            <div class="row text-center">                       
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

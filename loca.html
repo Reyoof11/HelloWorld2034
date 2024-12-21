@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Book Available Matches Now - Ahlan Belalam</title>
+    <style>
+        body {
+            background: #15193c;
+            color: #ffffff;
+        }
+
+        .header-image {
+            width: 100%;
+            height: 60vh; /* ليأخذ نصف المساحة الرأسية */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* لإخفاء الأجزاء الزائدة */
+            position: relative; /* للسماح بتطبيق الطبقة العلوية */
+        }
+
+        .header-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* لضبط الصورة داخل الإطار بشكل متناسق */
+            position: absolute; /* تثبيت الصورة كخلفية */
+            top: 0;
+            left: 0;
+            z-index: -1; /* لضمان بقاء الصورة خلف الطبقة العلوية */
+        }
+
+        @media (max-width: 768px) {
+            .header-image {
+                height: 50vh; /* تقليل الارتفاع للشاشات الصغيرة */
+            }
+            .header-image img {
+                object-fit: cover; /* لضمان عدم قص الصورة */
+            }
+        }
+
+        .card-custom-size {
+            max-width: 700px; /* تخصيص حجم الكرت */
+        }
+
+        .card {
+            background: #ffffff;
+            color: #000000;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .footer {
+            background: #232a34;
+            color: #ffffff;
+            padding: 20px 0;
+        }
+
+        .footer_menu ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
+
+        .footer_menu ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .footer_menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar1">
+        <div class="container-fluid navbar1">
+            <img src="world.png" width="80" height="80" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar1" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item navbar1">
+                        <a class="nav-link active navbar1" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item navbar1">
+                        <a class="nav-link" href="#">Teams</a>
+                    </li>
+                    <li class="nav-item navbar1">
+                        <a class="nav-link" href="#">Matches</a>
+                    </li>
+                  
+                    <li class="nav-item navbar1">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                   
+                    <li class="nav-item dropdown navbar1">
+                        <a class="nav-link dropdown-toggle navbar1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu navbar1">
+                            <li><a class="dropdown-item" href="#">About</a></li>
+                            <li><a class="dropdown-item" href="#">Contact</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Tickets</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item navbar1">
+                        <a class="nav-link disabled navbar1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="header-image">
+        <img src="tot.png" alt="Header Image">
+    </div>
+
+    <div class="container mt-5">
+        <h3 class="mb-4 cc">Book Available Matches Now</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-8"> 
+                <div class="card shadow card-custom-size">
+                    <div class="card-body"> 
+                        <div class="row">
+                            <div class="col-12 col-md-4 d-flex justify-content-start"> 
+                                <img src="mla.png" class="img-fluid rounded" alt="Match 1"> 
+                            </div> 
+                            <div class="col-12 col-md-6">
+                                <ul class="list-group list-group-horizontal list-unstyled d-flex justify-content-start"> 
+                                    <li class="p-1"> <h4 class="text-start">Saudi Arabia vs Argentina Match</h4></li> 
+                                </ul>
+                                <ul class="list-group list-group-horizontal list-unstyled d-flex justify-content-start"> 
+                                    <li class="p-1"> <span>Al-Jawhara Stadium</span> </li>
+                                    <li class="p-1"> <span><a href="https://maps.app.goo.gl/XUELU65yQXqaxtAx7" target="_blank">Show on map King Abdullah Sports City</a></span> </li>
+
+                                    
+                                </ul>
+                                <ul class="list-unstyled text-start mt-2">
+                                    <li>Tuesday, 22 November 2034</li> 
+                                    <li>1:00 PM</li>
+                                    <li>Jeddah</li>
+                                    <li> <button class="btn btn-primary"> <i class="bi bi-ticket"></i> Book your ticket</button> 
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8 mt-4"> 
+                <div class="card shadow card-custom-size">
+                    <div class="card-body"> 
+                        <div class="row">
+                            <div class="col-12 col-md-4 d-flex justify-content-start"> 
+                                <img src="https://parametric-architecture.com/wp-content/uploads/2024/01/King-Fahd-Sports-City-99.jpg" class="img-fluid rounded" alt="Match 2"> 
+                            </div> 
+                            <div class="col-12 col-md-6">
+                                <ul class="list-group list-group-horizontal list-unstyled d-flex justify-content-start"> 
+                                    <li class="p-1"> <h4 class="text-start">Brazil vs Switzerland Match</h4></li> 
+                                </ul>
+                                 
+                                <ul class="list-group list-group-horizontal list-unstyled d-flex justify-content-start"> 
+                                    <li class="p-1"> <span>King Fahd Stadium</span> </li>
+                                    <li class="p-1"> <span><a href="https://maps.app.goo.gl/kypx4ugfZiWj115y9" target="_blank">Show on map King Abdullah Sports City</a></span> </li>
+
+                                    
+                                </ul>
+                                <ul class="list-unstyled text-start mt-2">
+                                    <li>Thursday, 24 November 2034</li> 
+                                    <li>7:00 PM</li>
+                                    <li>Riyadh</li>
+                                    <li> <button class="btn btn-primary"> <i class="bi bi-ticket"></i> Book your ticket</button> 
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8 mt-4"> 
+                <div class="card shadow card-custom-size">
+                    <div class="card-body"> 
+                        <div class="row">
+                            <div class="col-12 col-md-4 d-flex justify-content-start"> 
+                                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSExMWFhUXFxcYGBgYGBgdFxoYGBgXFxoaGBcdHSkgGBolHRcWIjEhJikrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGyslHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAPkAywMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAQIDBQYAB//EAEcQAAECAwUECAMECAUCBwAAAAECEQADIQQSMUFRBWFxkQYTIjKBobHwQsHRUmKC4RQVI3KSotLxBzNTssIWQyQ0VGNzo+L/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAQIDBAX/xAAkEQEBAQACAQQCAgMAAAAAAAAAARECEiEDMUFRFGETcQQiMv/aAAwDAQACEQMRAD8A9WeEeGPCPHRzPeOeGPCXoB7whMMeOeAc8c8MeEeAeTCFUMvQ0qgiR4S9DHhrxRI8I8MvQl6Ae8I8MvQl6Ae8c8RvHPAPeEeGPHPAOeEeGvCPBT3hHhjxzwQ54R4a8JegDetjusgHrPYhSqI1gzrITrIC6wawt8w0wYZsIZsBmbDeugYNM0Q0zhAipw1hvXCGmDDOhvXQIZwhOuENMF9dCddApniGGeYamDOvhOugHrzHdcrdFB3XQnWwF1x3R3WHdAwb1sd10BCcdB5w5M/dE1cF9bHdZAvWDdHFekNMFX44qgRU2O633WGmCr8JegQzDHCafbQ0FXo69AiprYisJ+kbjF0OKt55mEM/UwJeTmocxDhPQMFjzjDSY2oPS8YUWg4YQP8ApCT8RPgYXrU7+SoaghJGZh1NRAi5o1Pp6ww2lH2vMH5w2r4GFfA+MI50gJVql/aHv8Mcq0IAcEHgR6FjDyCik6GEJgE7RTk/vxh6bYTgPP8AKHkFpO/0hawEbSv7PMiFVOOvkPrEqi34wjwKbTqR6Q4T06+cTTBV6OCvbwMF5P5w+/q0NBCTTfDVTQIHE0ZEeBhVTYmqm64Qzrxp6QgmH231hxXuhpjushb8IlYzp/F9IjWvNxhhV34s0XUxJ1sd1kQrWkJcqD6CphL4Y1rphRtTm8NExXCE7oZKqWetfIexCz5qUqKQSWzHDcDDaIUp3jkMo503Sq8OFHpjA0yzrUXJB4j86QyXIqxI1w5sPeEN/ZgyXNeqb5GWXz3iGrtQFHLuzOB55/lAhkLXdQgqTiS4pQOTuNPSFVZ5jkrIVk1BX5B4bpgk2tqJKgt2Yh04t3t/CJxajTBWJUGSGbGtKQCJxSnEXhXuhJNCXKiSSG4YwMmepiHZ7pqBgknA+PkIirOYsdpQlpIZw6QGrTGvrjA65su660JSeK3bDACIZCJpSwJNXeg8ycMMdIbLlrdr4vEkkliSw/KGww4rlaOToVfPwhZaJZ1fTTfjXKEAWC/WgMWbsh3JLNm9eUSIsyki9fICgRQOGNCSR7cRdTCSLOkqKS9NHhLRJQlxdUWzcaaZ+EdZrTLlhaesYEMFMggjc1X/ADiS3KkS0uorUulXBTUPpoefjDRH3mudlswDpuDnSJZc4ocMSHdyGLtTKuEMsKUrQpaFMzOAKsd4LCpGcRJsypwKmuIQtlKNaAO43M50pC2EguYqt9KmUaUUc8mbA4NwiBVoCElDAFTvebDB7zOBjhHJtiUICrrsSLzh1VLOAWFKU0ffCi1makqCWlpZkgAJc1Z8SDdUeKt8TVx0t0mgCyUtVQKReAqHFKHGE6lJCriVlQIFMKvnrTCFlyFqUCZTHLtEAAeNBjuieU5+ABF4JJKyEhbY4hyAfOGoiFnKU3lXgMmLnB6ggQqLQirzGOABFaAOo0wJJw+URC6pRQUMt27xCBpeJZs8d1awTKUhc+VLVcBcUQhsEkliT2TQ458YlVKAkDtLwbtZF27oDvnrES7alriS7m87kmjsAWDPSm+D/wBKQhR6rtUKllYDDJlGtGGX1gGZaZRN5c7rEgCgWEpCsDdSWpQULPCFNtc9SVMA/wCLB8+6x5wwWhgLwroA/wCXnnESly7ijeQouCAgh2zSDeYNrjQ7oktakSgO25LEBNRdOBJIrBXItKH7hYBz2WJ0AGvusQWi3ISopEpSmOIBY8IIlzbwBY+IPDSsPUkihB5GJ2MVVottoCqE3WqzcS2cOlzDRRSVKGBNLr455vB/6uR7MO/V8rNvKL2iZQCJqnBNGDUVuKRQFsW5Ry7eo0IXgzhtN8GqssnQc4YuRKagA9YTlCyoDbXBupSly5JJJw4QOUJUoqUpidFH6QamXL0flDiEZI8j9IdjEEqeEi6FuHdnpTB90BTbROK1FJSASaUwIZmI0pFmQnINwEJNS6a44CrY5cPGkJYeQCnUGmBOBqAxrow8YKtNtFyWiULt1JHeVUkuTzr4wklYGKK60898EgkfD6fWFuUipkoLMbvEBXyIfxizNtIQEIATUkm4XLswelBVhvh0yYDikH+GIwzv5dj6PDtphqJqrhQb5fNLpOWOopxhZc1SUsJeRDscwXxx4YVgpFtbLzEONuH2fMfWM7+lwNaLTMWAVJUVBnUzOAGFAQAwYcoZLtMy7cWlS0uCQcHGbO0Gm2bvMfWOTNSosEl91fKG36MgS2WyZNVeWFPSgIAoAkYVwEDKVMKOrBUE3rzUclmckhzSLVc4AkMaZtno0Im0DefD6CJ2sXIqpkiZM7xKRQkijlILOya6RLIsEy85LuGvLYin4TWLEWgb+Rhf0hOsO9OsdaJIRIZUxN7tBQTdZQdIAcAHAknhFMQkC4lKQCXch8vtEuMBF116DmD4w7rhuid6dVImyUahwNE050gmxySKXkpGgSD5PFiqcMCIjN32It9RehpRcLCfjmmWsekNQKf5q9e4c+MRTFgAuReGAFfBQOHOETOmtRA5fmIstZBotYeoLbjWCkhCu4scF0PPA8xFUmUo4JPIwvVnMgeI9BWN5GVhOlrT3g3hTwOBiMrOpjrFbzLp1jpzSxUORZvCCRb7MvvoKD9pOHFsj4GChr51POEJg4bPSofspiF7iSCOXzECTrLNQ96WGGjnzcw1EbiOChpD5FnnKLXQn94JHkamL/Z/RtRrNm3fupSx8CRv0MS8pDFNNBui8zsGr2iNDShGIMNOWb4HI/Qxf7VsEuzyVzJdnVaFpwQSFFWTlJDMMaB48yt/T22OUoKJBdimWEpYaENe8/CHH/b2L492vRY5qiyZaidAk/SFXYJoLFLHeQBzNBHm1p23aJiRfnrUS5LqmFsQxvKIOANB8W6K8WhTM4qxJupemQUzjwIeN9az2erTpN1gVynJymy/PtRIqysH62QdwnSyfWPI1En4lDDPnXWHyycyo+PKHX9nZ7DZ9kzli8EpY/fS/J4MsdgmIQtQSTMZgkAlvzPyjxSZaJhI7RoGwTgKB2FThXExabP6QWqSkhE1YpQBRABAOQIo7UiXjftZyehzULRRQI/eBB84YFndGW2b09taT+2RKnCnfQCpjjWNd0f25YrcoJu9VOIPYZF1RH2S1aVahx0MZuxZZTCs6DlHCafZgnamzFyzQIbLsp34sX5CKo2lSD2kIfQ3hySVV5Q9waqaRiCNxd+RhpWNByH0istNsUZl5cwJKsqEmgGGAo2MNVat1NSXPhQBPgIdTVpMtgu3AAS4NHfA5vQcNIgdZxWUjQE/n7yiM2mVdZLgvUk0P8pOmJhBMfBYP4h6FoYuiZaQnAny8qQR+lq3cj/VFeb50A3JPmXIhL+/0hkofMsZPxhR/F8xEX6AvJjwIJ8jD5xWxAS/H6RWzFzVUUlQ4JBd6YAtFQVNklPeYcSAc/pDSjx96xEhITVUuaovmlXOkcbYjEypgyYIGIZ6ipxEA5Ki9Mq++RjQ2QTerDrJBqMVK8A7NXOKmVawoP1RDMBeABLvmK0aL3ZtsUkAhFGDpc0AcBiQ+T+MY5X6WIJU6Y7JQo/vKIT/AAoug+cEybfce9Muj7ElKUvxUA4idG0ZKyrrQQAWAyajk6l/QZvC2hFmIKgoMKnXwGZ3eEZDpe25i2RKSlAOa1EneSSa8XgjaVos1zq5qUT1ZlaEl94SRQcOcDKsaiKKCNyWfxViTwYRXztnKDAEV9/PGGLpuzejFgtSpl6zJlpQAXQSkuolqJIAwOsVO2OhVgSTcXOTuCkqD6VQT5xeSXlpKZf7RzUmiAQ4oH7emmOOEBWi9UqcnDDB9GoBuEalu+6XFUP8LguWmdLtjJUHZUtzo14LAd90Vqf8PpypnVy7TJUouwVeSS34T6xutkzFiQoKVclBRVezwqAP71ekV6lhRJAu/ZANQNSX72BJ4DIQnPkZGUtP+H9sl95dn/iX/RE4/wAPbYAFFVnumoImLNNQ0usaidtQz0CRMLLCgL2F5GZOim5uILs05csES2YKULh7pAUWDZFmqIduRkZmy/4eKUHNplb7gUsjcQbtd0X2w9g2GyTAtJMyckYzOzdehKQzZs9YiTak9cVpBF4dpGCgU6HeCWO7fBdvQpQCkkraqVCkxPyUNQaxLaJtqbQKjdWCh+73VJVjTfjhjFJaks7ggDFSQ6fFCnAFHgiTaJawUzBcUcSKJV+8nB4FnTVST3wpAyU4I/dJqPMRYlBTZLg3DLVoQSg+ZueAgOzpfByc8H8t75Qm0trJUCUpDnPAjxHe4mANj7cEsEOaqJcGrECgGGT+MdJKmrhNhmKwST4F+RA9ImlbGmqySOKh6DDlFYvb95iZin1cjMZEEa5w82gqLlYV4srzLGJdXwtf1UEVXaJaOBc+RETJMj/1Uw8Eqb0ilG4A/wAisf4c4aQj738KfV4mDRbU25NKQhLJJoSEntYlgcvdYkt+1utASpF4AXiA4qMGqxO54BmzZgKWWLqiQ4QHGnGsOtKF3CoT1OMuyn05eMPAklTBRrOoHcTRnz10gmVbWQErkMCaBV1RphT+8VVwEC8qcqjqurDDXFnrTWDEbIlOl+sIU7KK9wOmEZsl9yWrCVPM2Wr9GCEKvXTfQLpbF0oYkVGcPtUxaQCsAH7r3WIDkPWigMcq5xmxMm2aabiStDlrrFwNWdiHxz9NDY9oIUAVFQvYhYVdSxcuDVLOWY50jlJns3u+6tvpKlnUsRnUJPqID2ogEJu4lY83avg8Wdss8olQTeSss90XkXluolxXE1LaGKq02BYqClSb1O0ABQJzajvzhKYdItC2BCiMXD6exA20drzkJDK7zh9HBzGBw5wPNUtAUVIWKPUFnABxGXzeBZlpStSDeoA4feRRtXIjowtJPSBYSGAugAAYNSg3Qq+kBIIIigWsocDuu49+3iGZPxcAj1fAGmBz3OY0L9PSF2DkJSxbUkXgSNzht/ARKrb4OY8RGRMxlXnd6k5vUvzem8w4L/M7ouo0p23dWFhQBq3I05PDkbeXUlSXJc01jJ2ioI3exuwqdQBkYRE5w8XUaS07XUSFXgCNGEMG3Fsf2lCXy97/ABjOTJtManD6/T8oGTPZIGkUX1q2qVFyomhfgBjAczaRNACTFZaJrJu5kB/UD5nw0iS+oIQpi5BCdyrynPEBvEjSNSIIK3UUkulOOj6bw9H8Ylump7xJesAyJZTRRZy7DHA03fFUw/r1JW70+yGYeOJMan6Z/tNLtDG6yXGIID657onVMOF0MdEgH0hirW3fS+FKepEFyLcAKJAGjfl7eE35PHwSTb5iaO6d4HHjB0vbSgALyhuDfOK+Xa3yIABJ7ROGWDRILbL+yf5fpEvGVZyraWaWoC6piQ2uIJala9nzgba1rTLU11ypakjQAplq11cNTPSDJ9plG7OSUL+GimZ6gXGxYE1AYCJbRJkzkMbqgaghmJYtUZ1xeOF3PDqym2Npz7wdZShUtKxd7IZRJLagFx88BAdnUpZugKmE5BS72tK8aHSNZaNmJVLVKWxuhRQohikhCKhh2VY1wLBw/aieTZ5cmUhEu6CFi8bov1TV2JZwSzUrzzu1LxqhR0XmKYqWJYJbtknFIUHIYVfTGkLL2ClIczVsyHIUAntPeFXdiGx5RaEzLoBKsgKrJF1aq1fIimWuENUWBN0mi2CqkkG/dGuOrUjeIgsOx0lD9bMQxL1ScDdqbgbDWLI2JgSJqcTWjhnGTZ74FmhJ7KalyCCykh0ApUkO3eDuQTVUFWKQuZUJLVrW6CWSUgbinSvjEsiynizTki91iFpPwrCkgkgsL9WHdGfygHbFmQqW6ZYMxSSEOEqSVB1hF+huqukA6s4jQ2jYhmoCZpISFAsCQTQhqY54vwguVYgkJF12pi6gwZ64Gp5mJOMa15dNCHKV2UoWSQEpmgKLlSrwSttDTeIS17KQwTctKQgBRVcvjtFIxSWJF5sKdrjHqcyzhWIc8H84yvS7aMiQEoJDqI7rEpY3gVtglx6UjX9J4+WLXs9JCWmLF5mCpZBYFiK4Pg58IHuIDtOS5ol0qcHJxmfnGgtYvpdKiWuqT3SHODEEXTQ+ERylTEhgvDslKgjsgnFyTkDy8YfCfLO/obs1oSWTorApd8NCDwhibIAEvMcOXuoW5bwpQjGNgmaq8AVuoXQQZcvQE4F2rjugS322ak3Wkl2VLVcFxY0UT3Xwf4S2VYXlnunhm5klLqJUosWZMs8KPiBrEYlyQ15Sw1e1LLHAsWf01jZWuzoKUzEXriyQCQhJQQaoWkIotOmbPwbL2IsIVOACrhwICgUl+0UtT5O9GjWmKMbCIckE5uA751er1ONN8VtutlwJTcWA/eUA1cbpBIPONcCWBdKdyQ31aD7KqyzOzNSpT0enmwD8FAiJeXKHWfDBzEdm+kBs9XOdMiTz4iJbPOlJwT2qC9NLIwdysGiXfsgPhXKN5I2FZpZKkAMxOKSLr9p0BmFcieGUQTej9nUSQLhOlUMRnRwN6ktXGNz1EvBkLLLTMWbsu/LSe1MT2Rxchkh3Z90OtSbOOyhSyunYABH8Q3/KLZGzXloCLy0DthNCQSMFAAtvbG6MoklbOCUXSoBNVsLiATk6jWn4sMIt9RJwVNnsxPcJOTMd5bTIwSjo/MIBBQRkygRzixmWpCUFEouFd4h7oAKq31Z3T3gwZ8IrlSSqoSjLAUoG3xm8611Fixrll08NFV0OcHytszkoKCBTAKDtqzEN5xmLRb7RPq4Qh8KpB+Zp/aLKVbiE94qZqnCpajB845Thirix7XWp0qAUAMgSwLA+6CJp1qWhQWhSUpHevJdJyxcMcOUVsu3AqumYk553eZAhLbszrjfCgrQFTpGOCQfphGvY8rP9asSgSqkOFi6ElVTQXst7Y6QWqQlQxUq8XulQFLoJYgFKS4Zm9YyE3ZU1GCQ3j/eHqt05LAg9lhyrVjXec2bWM9vslaqbalomumylYCc5qS5JZyCAKAMza6xLJ6UWslf/AIZkgUGEsXVKcuO8qqaP8FGjII2upJqV4YljUsXusPBiMYLs3SAfESe98JG9LEKLjI0ibx+ztGhtHSu0ADsSwSQ5Uz4YMVBuUVts6aWkd1SM3CbpqWqanCvOOO3rOSAFUpUhYyGj5uImm2iUodaJgCAbveF29ixcO9dYsxd1RWvpJa5ji/NUM0oBSKjDsgV3PFGbJaZrpCLgLgqWoAglsQ71G44iNrMtEpRe+kgAUC0EPWpLuTXyEMmykK7SSBwYl6Ydqgp5xqMq6xWUyxdXMS93Amp0YZ7vWCU2YKWgFYVfB7RUQ7ZJqcKU3YRMvZiFG+oOci1RwLwgQgEOpeDUCt246Rq1Q0yaUkPMSVFJbK6aAuGDYal23xMopXLVLmMwUwN3tJOAIrXEcfMTybCFChdtSRlm43w82IChKRn3xr6Rn3hirsM9Ula5U1N4ML4BpMQKJUktSYn4VZgFJwAi5slqXZlpUlV6WsOhXwqToRrkQcMNDAG0ZaVABUyUkoe6rrElnxoMQc90M6P7SlrezrDoJvAAuyh3ig8zvHlJ48MzwvdpWJJSqdJ7pHbRmg4OMwPT0zykkMbwDcb2lWrzi1slr6ma0tYUNfhUkjBQORHl5FbT2WFp66WlgzlByxFNUuDUYNyrbOy5xSQxL1S409couJe2ZjAEBThTumo0un8orjJIIchLn7PI1+sRqkqcuunEkU3B2hg2Gz9qSiEpUoBTByaV9BBdoscqaMEqcGufMRhOrxch8nFPX5RPY9qTZbssPuGXNj4iJi6vbT0aIBEpZAOIPMBwz+MVJsU5HZFoWAMkqVdHBi0GWXpASWmyyveD/wACyeUWyNt2dg6iNxQtx/LDbDJXm61DE1oxwzzGQirtm2KlCHUoguRVj86tD1pmTQyXSjU95X0ET2axJQGAEc+frcePt5Y5XA+w7YpKv29+61GTnvUKjkY1SLdZyB27rhxeeowBBmJlgh8wTFNdERLQDkI4/kfpZ6nH5jVyFpIdE4eHa59XfHnDlKUKEoJOSigKPg4V5RjFWSXmke+EEoMwURPmpGgWpuTxuevGu3C/LTTbPmqTveo3PgYEXYpJc3CN/lqIq0zZ6WKVpKqkqUiWXORCgkKSw+8X3RLK2nPW8uYUgFy6StSiwJZlrPJNdI3PU41bJnvBQ2PKV3b3L5DLHnBW0dmjq5ch7oQSrMuovU0DEV8IN2esy5N4vfIGKQwc0BYs+baDfAwmLNWJOdC5wjfWMeFKrYn3wfED3nEatgq+0k+fz4RoidQr3+GG9X91Xy/2w6cU8M4ej8x2p7384aro/N3e/YjTJSkUKHNdPD4YkAT/AKfl8rsTpxPDKf8AT005Dz96wv8A05N3cuJ+UawIT/pvwb+mEXKQxPVYaj/8w6QyMl+oFfbQPf8AeCbHs0Sl3zOIZw8ssqoINHrTJ2q0aESpf+kOQP8AxhlomXWuWcnhd+YEWceMTIZZ5AmzAmUlaUrJVfVLTjdJF5YJxYYka1hZCVKUHUxSWUlQJPZ+E9rssXoMXMGWK1KSbwStOoKfVnEAzLCSoKEyYoi9cUVXqE3yhZIJvAqOJq74xrZWlrbLMhSSuUAk4qQMjqNQfKKgytVF8xhDrVaytAAJQpCbpajpFQTqwccIebKVCYUPdSXQVEFRS2LjEPSoo4jKhz1ejniYS9oPKBFbTIJSZYfcCX4D3hDDaJpfsLG4i7yfGNINUVZkCIiR9o+f0jpi5KEAzFlKypwBdIuNm6hVwcHO7AwPN23ZiX6tWXcQbtAz5V1pi8XrTQ4TkIQ0jpitMIRCY+W5mkGOuxOtQ1ffEahCzDEQA4RIBD0yHhi3JuIDr0yA1OkXjxtpONIpVbqXJOAGJ+g3xoNg7Cc3jVWZyA0HvKG7G2RdqaqOOpOQGg3RppiQhARUKq+mnvxj2ceE4/26yAtp3akFktdAbiBXxAiKWveG8Yr+lVpUmSLtFGYkA5uxVg26Mqnas8G6Juf2Rl+GNWyM8r5by0Th2XIyhkmZgXGesYQ7XnH/ALnkn6RMjalobvn+FOGOkZnOJrYTJocsRn6mJZK8e61NfGMMraE7G+eSfpEqNpWi8E9YXJAwTmw+zDvE1spcwMCCMWOLxIJvZqR5xhZ9qny0pWJhAV90M7OfhqXfdCDbE9h+0xrgnIn7sW8oa3KV0cENXM6w+0LFC4eMJZ9oznYLNdAnPwhVbVn5zD/Cn6RO0XW3s04ZFNeMQTQm8UmqVYj5g5EHAxjkbUn4iawH3U7/ALsF2G3TFLSVrJBcAsBWlKAZVrFnKaavbTZ+0EqV2j3F4BY0VooU94ts85UtQum6pNVJId2BokAhn3vygkJC03FuUnOjpV9pO8fOAbU79XOU0wB0TPhWnL34R1bWcyx9aCuWkomgAqTmHGmh8oqESSSQtTEQ2y7TuzOsKrqwwcM1N2b5wXtraaFIC0ywL7hJOD5lAIBLVwoDEwCrlIAqX4V95xB+ko+z5pHlBuxdlzZ4WQkBMtIVMXMUEy0JL1Lh2ocAWiAdJpqHRLSgoSSARcYsSHDsalzXWL1pqqSOEIV5N73xGTCp91j5bkkO7SJELbGH2YC8BQ9lRbgFH5RDbLTfQGYdtAJDd15iVEb3Ccvy6cPTvJrjxtvg8Wlaz1cvHMkdlI36ndGg2Vs0IGpNVKOJO+Idl2JKEhIDYc3FSc4vbIhJIBLBxXKuA4mPXx4TjHSCLIEpBUpxQXfFxQsz0whqlEkklyTDrROJN2hAdmpnSm4UiEkARqT5LWU6Z2lurS7ELUf5UB/5jGVlGpNc8tQR84vemFoPX3QqgQCXCTXtHMFvhih61RzFNAgeiYzyxy5XycQYISssC1XPoIh/STr5I/phTaD5n7Og+7XGOcnH7RKpcNK+0DUM2WjRGbRuHJH9MOlqJIHZDtj1fM9mghnE063VSgPlepuKkvyAiFJ7IAfHT3v5xPbpSsH7t5JugNQg1YU7x5RHZEKU7KFA57gpxuxuyBEE4N5RLMqcKY84jRPUM/JH9MS3zQu7u7hH9MYk4/YiCjUVY7vekPlzCBicQrDw+nIw1U4jIfwo/phyJ6nHdanwy86/ZhMGv2bPCwCNIPtdkTOl9WqmaVZoVrw1EZ3YFrDEKPafRLNgwpSsaKQXd9aNp5R3+NdIzdm2exVJWLs8F0l+ysHBuOR8IkFkKgpMtJQpIDKUElT4qSHDBLv9Iu7fYhOSEk3VD/LXodFapMVCzMm/sVqUieggsFEX2wwxU2BzBjWqsbFZ0zkpAUtKx2Fy6Mt6Oadw5pwpGmR0WsaQAspCmDi/d/lcNwjHWFa19taAFIJSFOakjPRXicItl7asqzenyldbQLxxFMlDICMdrPdrN9lbM6MSzWXPxwBUPRQfzgWb0UtKKuFDMt9CYOXaymhArhlTxLRCNrJGo1b60jnem5Trs3FYdk2pKkqEssxBIIdlAgsDX4oismyphCZZvsHK7wIZTuCnUVVU5k7o0dm2+Seytb5AufKsG2a3LzY0HeSnJ9ANY3xzPCe0wPJkEAYu4AHiIugi4kpOJrgNKkeYGGcCG1MOsKUjAihGBFcW8tIYva6SSVIJeoZfIMUiNe6JEgYBhuhJ7gHhDZdqlqPcmf8A10Zsy2+JJ1ql3VUUGw7taZMTwwi6mPOduTlGbPGZLH8KgG4UiskEhKnzYeFfmBGutPRqVOmrmfpKr0xSlkKlEgFRKjVxmd3CFl9Dk1HXpp/7aq0yrHPlKxeNtZBJrBAXQYmpocMExqV9EQG/bILlnbCjuXMPT0QyE6WRV93nGOtP46xihE01LsRp9Y1croheAPWpD6gPj+9nHDocb13rE4O7an97dDrTpVBOmquFLt8B3ky8Tv7OMAWZLXuGo1Eam19Fpl0kTEkFYVkGIvJADlj3vKEl9EVCnWorT4cq1rujdmnWsykQUhVHrjhl7oIvpfRNRf8AbIDEjBJ/5RIOiCwW65Fd3Dfwjn0sXrWaW0JNqxHD3zbwjUp6IYtPQWxoY5PRSlZyB4GHSr1qisNpImIJ+zdJ1ald+HONXInMxiuHRZL/AOemn3FVfxizEiWlu0o4vh86x247nlZEyphIoH0cwJb7J14GCJyR2FPQ/cUfQ5QYZ0oJYAvgHOfKB7TtyRLooy0vXtGvq/lF9lViZhnApLickspLsF3XDkYXhWJU7QDdpBfPCHTernpMyQUdYCWKSwLG8z/awY7+Qw2xK/7kp14KLtUUqGoYuGre3WAOUqb89YFsfR5RwJO80H5xtLbZQCJhAI8/DfFH0ntsxMsGUoJxejuM/TT8+PLPmOkn0Wz7ECQxWAXamrPX84arZoC7vWd3EAa15wPshKkJ61d5U5VBeej4JBJwzI3DSCrZM6qWVEuaknU5mNcbanKSM10u2mpMxEmWagEqLBgGYMCOHIxUSbVNDHrBljLfD8UCJtCpi1zST2z/ACg0HziZSo4ep6tlzi58uWXBX6xng0Wk/gOf4od+tZ/2kZfCrL8UCgb4QPGP5+ad6JO0Z+qC75kY+BgyVtUjI5UpkXoXiuvfSGkn3vh+RzO36WA6QzRigZ4LTmd7RKOki/8ASV4FP9UVJVgGjiBmIv5PL6O0+lz/ANQvjLmZ5AjdnEqukyPiEwYfAfHjGfEsaQicY1+Tfpdn0vT0plJRcJZYIDXS5fWjYNziC0dJZJZSJkw1DgJNAyt25POMcQCalnOOm+HWJQTMAOt0+kenv416uX+PJPFbJHSRLUTMU4GQ+Zhi+k5ykrYF8U8PtRXLUlqARCsjTGPP+Rfp5NWh6SLLtJPioavlDBt+aTWWkY/E7EkZXRo0VoMcVGJ+RyS8lkrbs/4QgbySaDcGaBZm1LSr4kDH4Tn+KBi+MJ2nyaJ/Pz+zsIFpnn/uMXySMcM4hWmYrGao/hR9IcCYeCrTjWMX1uf2uobk5KXRMU4IOWIejNm/pBsrpNJIBm2ZK1/ErBzq2UcibRoBnbOQVE1rpG+Hr325V6PS5enP+5rUW+2Wyb2goS8cXUtxgHNAIuNg7SRaZbkATEUmJ0I+IDSntooOkvcX4/8AGG/4Z/5s3/40/wC+PT6vGOHDlezVIZytmHw0y1bUxmOmVu7AlJPamFjuSMfL1jT7Q7h8IwvSP/zSP3Ie3HW57hLowTgAwjg2McIcMI+fa4XzXPCoTwhVYQ9GcZvhYQy4YhJiafDEZcILiMpLxxBh4zhhxgzhVGGroDwPpCxHN7q+Cv8AbGpPLcUJMNUa8a86wsdNxHBPoI+hH1eXvF9ZF3kg7v7w5QxiDZXcHE/KJx9Y8POZyr5fq8c5WQgMIYRPzhVRlyIDCpMcj5w4YwWQoEPln3uhE+/KOESqUx16HZDw9YaIyP/Z" class="img-fluid rounded" alt="Match 3"> 
+                            </div> 
+                            <div class="col-12 col-md-6">
+                                <ul class="list-group list-group-horizontal list-unstyled d-flex justify-content-start"> 
+                                    <li class="p-1"> <h4 class="text-start">France vs Germany Match</h4></li> 
+                                </ul>
+                                
+                                    <ul class="list-group list-group-horizontal list-unstyled d-flex justify-content-start"> 
+                                        <li class="p-1"> <span>King Abdullah Sports City</span> </li>
+                                        <li class="p-1"> <span><a href="  https://maps.app.goo.gl/dkW92DfXrF9buiiG8" target="_blank">Show on map King Abdullah Sports City</a></span> </li>
+    
+                                        
+                                    </ul>
+                                  
+                                
+                                <ul class="list-unstyled text-start mt-2">
+                                    <li>Saturday, 26 November 2034</li> 
+                                    <li>9:00 PM</li>
+                                    <li>Jeddah</li>
+                                    <li> <button class="btn btn-primary"> <i class="bi bi-ticket"></i> Book your ticket</button> 
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+
+            <div class="footer">
+                <div class="container">		
+                    <div class="row text-center">						
+                        <div class="col-lg-12 col-sm-12 col-xs-12">
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Service</a></li>
+                                    <li><a href="#">Works</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>						
+                            <div class="footer_copyright">
+                                <p>  All Rights Reserved.</p>
+                            </div>	
+                                                
+                        </div><!--- END COL -->							
+                    </div><!--- END ROW -->					
+                </div><!--- END CONTAINER -->
+            </div>
+            </div>
+        </body>

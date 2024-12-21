@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Fan Club Chat - أهلاً بالعالم</title>
+    <style>
+        body {
+            background: #15193c;
+            color: #ffffff;
+        }
+        .chat-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            color: #000000;
+        }
+        .chat-box {
+            height: 400px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .chat-message {
+            margin-bottom: 10px;
+            max-width: 70%;
+        }
+        .message-bubble {
+            padding: 10px 15px;
+            border-radius: 15px;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .message-bubble.user-message {
+            background: #e1ffc7;
+            align-self: flex-end;
+        }
+        .message-bubble.other-message {
+            background: #fff;
+            align-self: flex-start;
+        }
+        .message-text {
+            margin: 0;
+        }
+        .message-status {
+            font-size: 0.8em;
+            color: #888;
+            position: absolute;
+            bottom: -15px;
+            right: 10px;
+        }
+        .message-image {
+            max-width: 100%;
+            border-radius: 15px;
+            margin-top: 5px;
+        }
+        .form-control {
+            margin-bottom: 10px;
+        }
+        .footer {
+            background: #232a34;
+            color: #ffffff;
+            padding: 20px 0;
+        }
+        .footer_menu ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
+        .footer_menu ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .footer_menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5 chat-container">
+        <h1 class="mb-4 text-center">Fan Club Chat - أهلاً بالعالم </h1>
+        <div id="chatBox" class="chat-box">
+            <div class="chat-message">
+                <div class="message-bubble other-message">
+                    <p class="message-text">Can't wait for the next match! Who's coming?</p>
+                    <span class="message-status">10:30 AM</span>
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="message-bubble other-message">
+                    <p class="message-text">I'll be there! Let's cheer for our team! 🎉</p>
+                    <span class="message-status">10:32 AM</span>
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="message-bubble other-message">
+                    <p class="message-text">Did you see the last game? That goal was amazing! 😍</p>
+                    <span class="message-status">10:35 AM</span>
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="message-bubble other-message">
+                    <p class="message-text">Haha, I loved the part when the player celebrated by doing a cartwheel!</p>
+                    <span class="message-status">10:40 AM</span>
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="message-bubble other-message">
+                    <p class="message-text">Who's bringing snacks? I can't watch without my popcorn 🍿</p>
+                    <span class="message-status">10:45 AM</span>
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="message-bubble user-message">
+                    <img src="data:image/jpeg;base64,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" alt="hi " class="message-image">
+                    <p class="message-status">11:00 AM</p>
+                </div>
+            </div>
+        </div>
+        <form id="chatForm" onsubmit="sendMessage(event)" class="d-flex flex-column">
+            <input type="text" id="chatInput" class="form-control" placeholder="Type your message here...">
+            <label for="chatImage" class="btn btn-light btn-sm mt-2">
+                <i class="bi bi-camera-fill"></i> Upload Image
+            </label>
+            <input type="file" id="chatImage" class="form-control-file d-none">
+            <button type="submit" class="btn btn-primary mt-2">Send</button>
+        </form>
+    </div>
+
+    <div class="footer mt-5">
+        <div class="container">     
+            <div class="row text-center">                       
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Works</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>                      
+                    <div class="footer_copyright">
+                        <p> All Rights Reserved.</p>
+                    </div>  
+                  
+                    </div>                      
+                </div><!--- END COL -->                         
+            </div><!--- END ROW -->                 
+        </div><!--- END CONTAINER -->
+    </div>
+
+    <script>
+        function sendMessage(event) {
+            event.preventDefault();
+            const chatInput = document.getElementById('chatInput');
+            const chatImage = document.getElementById('chatImage');
+            const chatBox = document.getElementById('chatBox');
+
+            if (chatInput.value.trim() !== "") {
+                const message = document.createElement('div');
+                message.className = "chat-message";
+                message.innerHTML = `<div class="message-bubble user-message"><p class="message-text">${chatInput.value}</p><span class="message-status">${new Date().toLocaleTimeString()}</span></div>`;
+                chatBox.appendChild(message);
+                chatBox.scrollTop = chatBox.scrollHeight;
+                chatInput.value = "";
+            }
+
+            if (chatImage.files.length > 0) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const message = document.createElement('div');
+                    message.className = "chat-message";
+                    message.innerHTML = `<div class="message-bubble user-message"><img src="${e.target.result}" alt="Image" class="message-image"><span class="message-status">${new Date().toLocaleTimeString()}</span></div>`;
+                    chatBox.appendChild(message);
+                    chatBox.scrollTop = chatBox.scrollHeight;
+                };
+                reader.readAsDataURL(chatImage.files[0]);
+                chatImage.value = "";
+            }
+        }
+    </script>
+</body>
+</html>

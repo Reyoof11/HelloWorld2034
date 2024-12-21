@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Matches - Ahlan Belalam</title>
+    <style>
+        body {
+            background: #15193c;
+            color: #ffffff;
+        }
+        .match-card {
+            background: #ffffff;
+            color: #000000;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .match-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .match-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .footer {
+            background: #232a34;
+            color: #ffffff;
+            padding: 20px 0;
+        }
+        .footer_menu ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
+        .footer_menu ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .footer_menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+        }
+        .counter {
+            display: flex;
+            justify-content: space-around;
+            background: #ffffff;
+            color: #000000;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .counter div {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4 text-center">Upcoming Matches</h1>
+
+        <div class="match-card">
+            <div class="match-info">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg" alt="Argentina">
+                <span>Argentina vs Saudi Arabia</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg" alt="Saudi Arabia">
+            </div>
+            <p class="text-center mt-3">Date: 22nd November 2022 | Time: 1:00 PM</p>
+        </div>
+
+        <div class="match-card">
+            <div class="match-info">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg" alt="France">
+                <span>France vs Denmark</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg" alt="Denmark">
+            </div>
+            <p class="text-center mt-3">Date: 26th November 2022 | Time: 7:00 PM</p>
+        </div>
+
+        <div class="match-card">
+            <div class="match-info">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" alt="Germany">
+                <span>Germany vs Spain</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="Spain">
+            </div>
+            <p class="text-center mt-3">Date: 27th November 2022 | Time: 10:00 PM</p>
+        </div>
+
+        <div class="match-card">
+            <div class="match-info">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/188px-Flag_of_England.svg.png" alt="England">
+                <span>England vs USA</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="USA">
+            </div>
+            <p class="text-center mt-3">Date: 25th November 2022 | Time: 10:00 PM</p>
+        </div>
+
+        <div class="match-card">
+            <div class="match-info">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="Mexico">
+                <span>Mexico vs Poland</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg" alt="Poland">
+            </div>
+            <p class="text-center mt-3">Date: 22nd November 2022 | Time: 7:00 PM</p>
+        </div>
+
+        <div class="match-card">
+            <div class="match-info">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg" alt="Portugal">
+                <span>Portugal vs Ghana</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg" alt="Ghana">
+            </div>
+            <p class="text-center mt-3">Date: 24th November 2022 | Time: 4:00 PM</p>
+        </div>
+
+        <h2 class="mt-5 text-center">Match Statistics</h2>
+        <div class="counter">
+            <div>
+                <h3>Wins</h3>
+                <p>Argentina: 5</p>
+                <p>Brazil: 3</p>
+            </div>
+            <div>
+                <h3>Qualifications</h3>
+                <p>Argentina</p>
+                <p>France</p>
+            </div>
+        </div>
+
+        <h2 class="mt-5 text-center">News</h2>
+        <div class="card mt-3">
+            <div class="card-body">
+                <h5 class="card-title">Qualification Update</h5>
+                <p class="card-text">Argentina and France have qualified for the next round after an intense series of matches.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer mt-5">
+        <div class="container">     
+            <div class="row text-center">                       
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Works</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>                      
+                    <div class="footer_copyright">
+                        <p>  All Rights Reserved.</p>
+                    </div>  
+                                       
+                </div><!--- END COL -->                         
+            </div><!--- END ROW -->                 
+        </div><!--- END CONTAINER -->
+    </div>
+</body>
+</html>
